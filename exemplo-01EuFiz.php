@@ -15,7 +15,7 @@ $arquivo = "readme.txt";
 if(!file_exists($dir_A . DIRECTORY_SEPARATOR . $arquivo)){
 
     $file = fopen($dir_A . DIRECTORY_SEPARATOR . $arquivo, "w+");
-
+    
     fwrite($file, date("Y-m-d H:i:s"));
 
     //fechando.
